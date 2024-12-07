@@ -1,0 +1,264 @@
+/* General Styles */
+.calendar-container2 {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+  height: 98%;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-for-cal {
+  text-align: center;
+  color: goldenrod !important;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.calen-cont-cont {
+  background-color: #313131;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  overflow: auto;
+}
+
+.btns-cal-user {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.calen-cont-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.header-calen-user {
+  text-align: center;
+  color: goldenrod;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.calendar-container h2,
+.calendar-container h3 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.calendar-container h3 {
+  margin-bottom: 10px;
+}
+
+.close-btn-user-cal {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: white !important;
+  font-size: 15px;
+  border: 1px solid white !important;
+}
+
+.calendar-container button {
+  background-color: #757575;
+  /* Grey */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.btns-calendar {
+  height: 40px !important;
+  padding: 7px;
+  border-radius: 5px;
+  color: white !important;
+  font-size: 20px;
+  background-color: #201e1e !important;
+  border: 1px solid white !important;
+}
+
+.calendar-container select {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px;
+  border: 1px solid #757575;
+  /* Grey border */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+
+
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #2c2c2c;
+  /* Dark grey */
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the content horizontally */
+  justify-content: center;
+  /* Center the content vertically */
+}
+
+.event-detail p {
+  font-size: 16px;
+
+
+}
+
+.render-cal-events {
+  background-color: #201e1e;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.render-cal-events::-webkit-scrollbar {
+  display: none;
+}
+
+.event-indicator {
+
+
+
+  background-color: red !important;
+  color: white !important;
+  font-weight: 700;
+}
+
+.modal-content2 {
+  padding: 20px;
+  height: 500px;
+  overflow: auto;
+  width: 550px;
+}
+
+.modal-content2::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-heading1 {
+  color: goldenrod !important;
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn-close-yes-2 {
+  background-color: #1e1e1e;
+  border: 1px solid white ;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+hr {
+  border: 1px solid #444444;
+}
+
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev2-button {
+  font-size: 10px !important;
+  /* Smaller font size */
+  padding: 5px 8px !important;
+  /* Smaller padding */
+}
+
+.react-calendar__navigation__next-button,
+.react-calendar__navigation__prev-button {
+  font-size: 2px !important;
+  /* Smaller font size */
+  padding: 5px 8px !important;
+  /* Smaller padding */
+}
+
+.react-calendar__navigation__arrow {
+  font-size: 14px !important;
+  /* Smaller font size */
+  /* Smaller padding */
+  background-color: grey !important;
+  border-radius: 5px;
+  color: white !important;
+  padding: 5px;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-size: 20px !important;
+  background-color: grey !important;
+  border-radius: 2px;
+  color: white !important;
+  padding: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 15px;
+  }
+
+
+
+
+
+  .modal-content {
+    padding: 20px;
+    width: 100% !important;
+  }
+
+  .event-detail p {
+    font-size: 14px;
+  }
+
+  .calen-cont-cont {
+
+    width: 95%;
+  }
+
+  .btns-calendar {
+    width: 150px !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    border-radius: 5px !important;
+  }
+
+  .calendar-container2 {
+    width: 95%;
+  }
+
+  .react-calendar__navigation__arrow {
+    font-size: 14px !important;
+    /* Smaller font size */
+    padding: 5px 8px !important;
+    /* Smaller padding */
+  }
+
+  .react-calendar__navigation__label__labelText {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,244 @@
+/* General Styles */
+
+
+.app-container {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.app-title {
+  color: goldenrod; /* Golden color for title */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+ 
+/* Meetings Container */
+.meetings-container {
+
+  width: 98%;
+  height: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Task Input Container */
+.task-input-container {
+  background-color: #313131;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 500px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #1e1e1e;
+ color: white !important;
+  border-radius: 4px;
+  border:1px solid white
+}
+
+.textarea-field {
+  height: 100px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: goldenrod; /* Golden color on focus */
+  outline: none;
+}
+
+/* Buttons */
+.add-task-btn,
+.delete-all-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 5px;
+  border:1px solid white
+}
+
+
+/* Task List */
+.task-list-container {
+  width: 100%;
+  padding: 20px;
+  background-color:#1e1e1e;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  height: 120px;
+}
+.task-list-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.task-list-title {
+  color: goldenrod; /* Golden color for task list title */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.task-item {
+    background-color: #313131;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  overflow: auto;
+  
+}
+
+
+
+.task-item-title {
+  color: goldenrod; /* Golden color for task item title */
+  font-size: 1.25rem;
+    
+  margin-bottom: 5px;
+}
+
+.task-item-details {
+  color: #e0e0e0; /* Lighter color for details */
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  z-index: 1000;
+
+}
+
+.modal-content {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.flex-flex-flex1{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.modal-content::-webkit-scrollbar{
+  display: none;
+}
+.golden-rod{
+  color: goldenrod;
+}
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: goldenrod; /* Golden color for modal title */
+}
+
+.modal-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.close-modal-btn {
+    background-color: rgb(49, 47, 47);
+  color:white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+ 
+  margin-top: 20px;
+  border: 1px solid white;
+}
+
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(32, 30, 30); /* Optional: set a background color for the outer area */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .task-input-container {
+    width: 100%;
+ 
+  }
+
+  .input-field,
+  .textarea-field {
+    font-size: 14px;
+  }
+
+  .add-task-btn,
+  .delete-all-btn {
+    font-size: 14px;
+  }
+  .ip1{
+    width: 100px;
+  }
+
+  .ip2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .task-list-container {
+    padding: 10px;
+  }
+
+  .task-item {
+    padding: 8px;
+  }
+
+  .meetings-container {
+    height: 85%;
+    width: 95%;
+    
+  }
+  
+}
+  

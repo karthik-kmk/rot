@@ -1,0 +1,127 @@
+
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201e1e;
+}
+
+.leaderboard-div-div {
+    width: 98%;
+    height: 96%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff !important; /* Change text color to white */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboard-heading {
+    text-align: center;
+    color: goldenrod;
+    font-size: 50px !important;
+    margin-bottom: 20px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.leaderboard-container {
+    background-color: #313131;
+    padding: 20px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.links{
+    margin-top: 10px;
+    
+    height: 80px;
+    overflow: auto;
+}
+
+.links::-webkit-scrollbar{
+    display: none;
+}
+
+.notiheading{
+    color: goldenrod;
+}
+.leaderboard-div  *{
+    background-color:#1e1e1e !important;
+    color: white !important;
+}
+.leader-flex1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.leaderboard-input-no input{
+    border-radius: 5px;
+    background-color: #313131 !important;
+    border: 1px solid white !important;
+    color: white !important;
+    
+}
+.leaderboard-input-no .MuiInputLabel-root {
+   display: none;
+  }
+
+.button-leaderboard{
+    height:55px !important;
+    background-color: #1e1e1e !important;
+    border: 1px solid white !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    .leaderboard-heading {
+        font-size: 30px !important; /* Adjust font size for smaller screens */
+        margin-bottom: 10px !important;
+    }
+
+    .leaderboard-div-div {
+        padding: 15px; /* Reduce padding for mobile */
+        width: 90%;
+        height: 85%;
+    }
+
+    .leaderboard-container {
+        padding: 15px;
+        height: auto; /* Let the height adjust to content */
+        width: 100%; /* Full width for mobile screens */
+    }
+
+    
+    .leaderboard-div {
+        width: 100%; /* Full width for mobile screens */
+       
+    }
+
+    .leaderboard-div  *{
+        font-size: 12px !important;
+    }
+
+    .leaderboard-container .MuiButton-root {
+        width: 100%; /* Make buttons full width on mobile */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .leaderboard-div-div .MuiTextField-root {
+        width: 100%; /* Make text fields full width */
+    }
+
+    .leaderboard-div .MuiTableContainer-root {
+        overflow-x: auto; /* Allow horizontal scrolling for tables */
+    }
+    .leader-flex1{
+        flex-direction: column;
+    }
+}

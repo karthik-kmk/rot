@@ -1,0 +1,125 @@
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#loader img {
+  width: 50vw;
+  color: white;
+
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(20, 19, 19);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+
+
+.logo-header {
+  height: 4.5vh;
+  position: relative;
+
+}
+
+.login-btn {
+  background-color: goldenrod !important;
+  width: 100px !important;
+  color: black !important;
+  font-weight: 800 !important;
+  float: right;
+  width: 5vw !important;
+  height: 4vh !important;
+}
+
+.image-bg {
+  width: 100%;
+  height: calc(100vh - 4.5vh);
+  object-fit: cover;
+  margin-top:4vh ;
+  filter: brightness(0.3); /* Reduces brightness */
+}
+.bgimage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none; /* Ensures the shadow layer does not block interactions with the image */
+}
+
+.modalbox {
+ 
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column;
+  gap: 20px;
+  filter: brightness(0.8);
+}
+
+.close-btn {
+  position: relative;
+  float: right;
+  margin-top: -20px;
+  margin-right: -20px;
+  cursor: pointer;
+}
+
+.textfields-login-btn {
+  height: 45px !important;
+  background-color: goldenrod !important;
+  color: black !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #loader img {
+    width: 80vw;
+  }
+  .image-bg {
+    content: url('../assets/landing1.png'); /* Path to your mobile image */
+   
+  }
+  .image-bg {
+  
+    filter: brightness(0.2); /* Reduces brightness */
+  }
+  .bgimage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 90%);
+    pointer-events: none; /* Ensures the shadow layer does not block interactions with the image */
+  }
+  .modalbox{
+    width: 90vw !important;
+  }
+}

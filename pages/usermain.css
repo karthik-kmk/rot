@@ -1,0 +1,122 @@
+/* UserMain.css */
+
+/* Base styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  .header {
+    padding: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Menu button for mobile */
+  .menu-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Hide by default, visible on mobile */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    left: -250px; /* Hide sidebar initially */
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Show sidebar when open */
+  }
+  
+  .nav {
+    width: 100%;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 15px 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #575757;
+  }
+  
+  /* Logout button */
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #d43f3a;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block; /* Show menu button on mobile */
+    }
+  
+    .sidebar {
+      width: 100%; /* Make sidebar full-width on mobile */
+      left: -100%; /* Hide it off-screen */
+    }
+  
+    .sidebar.open {
+      left: 0; /* Slide sidebar in on open */
+    }
+  
+    .nav-item {
+      margin: 10px;
+    }
+  
+    .logout-button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

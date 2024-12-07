@@ -1,0 +1,265 @@
+/* Wrapper styling */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201e1e;
+}
+
+/* Inner container (90% of viewport) */
+.calendar-container {
+    width: 98%;
+    height: 96%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Headings */
+.calendar-heading,
+
+.events-heading {
+    color: goldenrod !important;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.modal-heading{
+    color: goldenrod;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+/* Buttons */
+.calendar-button {
+    border: 1px solid white !important;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    border: 1px solid white;
+    background-color: #1e1e1e !important;
+}
+
+.refresh-button {
+    float: right;
+    background-color: rgb(49, 47, 47);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+.close-button {
+    margin-top: 15px;
+    border: 1px solid white;
+    background-color: rgb(49, 47, 47);
+}
+
+.add-more-button {
+    border: 1px solid white;
+    background-color: rgb(49, 47, 47);
+}
+
+.submit-button {
+    border: 1px solid white;
+    background-color: rgb(49, 47, 47);
+}
+
+.month-dropdown {
+    margin: 10px 0;
+    background-color: #757575 !important;
+    border: 1px solid white !important;
+    background-color: #1e1e1e !important;
+    color: #e0e0e0;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 0.9em;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+/* Event Indicator */
+.event-indicator {
+    background-color: red !important;
+    border-radius: 50%;
+}
+.react-calendar__tile{
+    background-color: grey !important;
+    border: 1px solid white !important;
+    color: black !important;
+}
+.modal-content1{
+    padding: 20px;
+    height: 500px;
+    max-width: 400px;
+    overflow: auto;
+}
+.modal-content1::-webkit-scrollbar{
+    display: none;
+}
+.modal-heading{
+    color: goldenrod !important;
+}
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 70, 70, 0.9);
+    /* Updated background color with transparency */
+    backdrop-filter: blur(8px);
+    /* Blur effect */
+    border: 2px solid #a0a0a0;
+    border-radius: 10px;
+    max-width: 500px;
+    
+  
+   
+    z-index: 1000;
+}
+
+.modal-content5 {
+    color: #d0d0d0;
+    font-size: 1em;
+    line-height: 1.4;
+    width: 100% !important;
+    padding: 10px;
+    
+   
+}
+
+/* Event Input */
+.event-input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+}
+
+/* Event Details */
+.event-detail {
+    background-color: #1e1e1e;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.event-info {
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+.calendar-border {
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    background-color:#313131;
+    overflow: auto;
+    
+}
+
+.calendar-border::-webkit-scrollbar{
+    display: none;
+}
+
+
+.react-calendar__tile {
+    background-color: rgb(49, 47, 47);
+    color: #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+
+/* Highlight current date with red color */
+.react-calendar__tile--now {
+    background-color: goldenrod !important;
+    color: #fff !important;
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .calendar-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .calendar-button {
+        font-size: 13px !important;
+        padding: 8px 12px;
+        width: 140px;
+    }
+ .event-indicator{
+    width: 15px;
+ }
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+    }
+
+    .month-dropdown {
+        width: 100%;
+        margin-left: -1px !important;
+    }
+
+    .calendar-heading,
+   
+    .events-heading {
+        font-size: 2em;
+    }
+
+
+    .modal-heading{
+        font-size: 1.5em;
+    }
+    .calendar-border {
+        width: 90%;
+        height: 85%;
+    }
+
+    .modal{
+        width: 90%;
+    }
+    .add-more-button{
+        font-size: 12px !important;
+    }
+    .eventip2{
+        width: 340px;
+        height: 30px;
+    }
+}
+

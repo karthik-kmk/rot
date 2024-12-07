@@ -1,0 +1,52 @@
+/* welcomeadmin.css */
+
+/* Wrapper to cover the entire viewport */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32, 30, 30); /* Optional: set a background color for the outer area */
+}
+.video-player{
+
+    width: 103%;
+    border-radius: 10px;
+   
+}
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%; /* 90% of the viewport width */
+    height: 96%; /* 90% of the viewport height */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .welcome-div {
+        padding: 15px;
+        border-width: 1.5px;
+        width: 95%;
+    }
+   
+
+    .video-player{
+
+        height: 100vh !important;
+       
+    }
+
+    
+  
+}
